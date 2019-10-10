@@ -1,0 +1,12 @@
+Manejo de git.
+
+docker-compose exec workspace bash
+cd proyecto 11/
+git init
+git status 
+git add .
+git commit -m “Commit inicial despues de varias clases”
+(Vas a github, dentro del usuario, creo un proyecto llamado proyecto11_2019)
+(Para poder enlazar proyecto actual con lo que queremos enlazar cogemos la url y la pegamos en el siguiente codigo)
+git remote add origin url
+git push -u origin master

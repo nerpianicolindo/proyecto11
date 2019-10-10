@@ -10,19 +10,26 @@
 	Introduzca un numero entero<input type="text" name="numero"/>
 	<input type="submit" name="enviar"/>
 	</form>
-	<?php  
-	$numero = $_GET['numero'];
-	echo "Entero-----Cuadrado-----Cubo<br/>";
-	$aux = $numero+1;
-	for ($i=0; $i < 5; $i++) { 
-		$cuadrado = pow($aux, 2);
-		$cubo = pow($aux, 3);
-		echo $aux . "     " . $cuadrado . "     " . $cubo;
-		$aux++;	
-		echo "<br/>";
-	}
 
-	?>
+	<h3>Resultado</h3>
+	<table>
+		<thead>
+			<th>Numero</th>
+			<th>Cuadrado</th>
+			<th>Cubo</th>
+		</thead>
+		<tbody>
+			<?php 
+				$numero = $_GET['numero'];
+				for ($i=1; $i<6; $i++) : ?>
+			<tr>
+				<td><?= $numero+$i ?></td>
+				<td><?= pow($numero+$i, 2) ?></td>
+				<td><?= pow($numero+$i,3) ?></td>
+			</tr>
+			<?php endfor ?>
+		</tbody>
+	</table>
 	<br/><a href="http://proyecto11.local/tema2/hoja1/">Volver</a>
 </body>
 </html>
