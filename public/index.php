@@ -12,6 +12,8 @@
 	<li><a href="tema3/index.php"><p>Tema 3</p></a></li>
 	<li><a href="tema4/index.php"><p>Tema 4</p></a></li>
 	<li><a href="tema6/index.php"><p>Tema 6</p></a></li>
+	<li><a href="tema11/index.php"><p>Tema 11</p></a></li>
+
 
 	
 </ul>
