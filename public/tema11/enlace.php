@@ -11,7 +11,7 @@
 			public $etiqueta;
 			public $url;
 			public function mostrar() {
-				echo "Este es un enlace a " . "<a href=https://$this->url> $this->etiqueta </a>";
+				echo 'Este es un enlace a'.'<a href=https://' . $this->url . '>' . $this->etiqueta . '</a>';
 			}
 		}
 
